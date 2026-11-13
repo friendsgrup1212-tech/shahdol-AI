@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#7bd8b1", "on-secondary": "#ffffff", "outline": "#6e7a73", "surface": "#faf8ff", "secondary-fixed": "#ffdcc3", "surface-container-low": "#f2f3ff", "tertiary-fixed": "#9cf2e8", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "primary": "#005d42", "surface-container-high": "#e2e7ff", "on-tertiary-container": "#a3faef", "on-surface-variant": "#3e4943", "tertiary": "#005c55", "primary-fixed": "#97f5cc", "surface-bright": "#faf8ff", "inverse-surface": "#283044", "on-background": "#131b2e", "on-secondary-container": "#663500", "error-container": "#ffdad6", "primary-container": "#047857", "on-tertiary-fixed-variant": "#00504a", "primary-fixed-dim": "#7bd8b1", "surface-variant": "#dae2fd", "secondary": "#904d00", "background": "#faf8ff", "outline-variant": "#bdc9c1", "on-tertiary-fixed": "#00201d", "inverse-on-surface": "#eef0ff", "surface-container-lowest": "#ffffff", "tertiary-container": "#0f766e", "on-tertiary": "#ffffff", "on-primary-container": "#9ffdd3", "surface-container": "#eaedff", "on-error-container": "#93000a", "on-error": "#ffffff", "error": "#ba1a1a", "on-secondary-fixed": "#2f1500", "surface-tint": "#006c4e", "secondary-fixed-dim": "#ffb77d", "on-primary": "#ffffff", "on-primary-fixed": "#002115", "on-secondary-fixed-variant": "#6e3900", "on-primary-fixed-variant": "#00513a", "secondary-container": "#fe932c", "on-surface": "#131b2e", "tertiary-fixed-dim": "#80d5cb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin": "2rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg": ["Noto Sans"], "body-md": ["Noto Sans"], "body-lg": ["Noto Sans"], "headline-md": ["Noto Sans"], "body-sm": ["Noto Sans"], "label-lg": ["Inter"], "headline-sm": ["Noto Sans"], "display-lg": ["Noto Sans"], "label-sm": ["Inter"], "display-lg-mobile": ["Noto Sans"], "label-md": ["Inter"], "headline-lg-mobile": ["Noto Sans"] }, "fontSize": { "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "display-lg": ["3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg-mobile": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Smart Shahdol AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCLd6r6VGMnuN39SOjJfkoWQriQkQPToHP6ct_sMIyhrE-oCqblv8npgYQ27eqcBRQ7GTFOunnfRTHAgwNp2r4ydYlv95jzCwOLe7qCvKVmlnyuSgW32y-nizvX5ma6X2LNVA8EPO2m6LOXcBN_HFldJyqvNzfaHuG0x-VzXv46r2NkFFqI8dnKL8gxzPea4isjRYMlyOePN3VygzG4bvK9vRnvQR1clSPYd1pgEA5f2w"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">SMART SHAHdol AI</span><span class="font-label-sm text-label-sm text-on-surface-variant">Government of Madhya Pradesh • Shahdol District Administration</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-xs py-space-xs rounded-lg" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="ai-assistant" href="#">AI Assistant (सहायक)</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="knowledge-database" href="#">Knowledge Database (ज्ञानकोष)</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="district-directory" href="#">District Directory (जिला निर्देशिका)</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="schemes-and-agriculture" href="#">Schemes &amp; Agriculture (कृषि व योजनाएं)</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg hover:bg-surface-container-highest transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">translate</span>हिन्दी / ENG</button><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs bg-error-container text-on-error-container font-label-sm text-label-sm rounded-lg font-semibold"><span class="material-symbols-outlined text-[16px]">emergency</span>108 Ambulance | 112 Emergency</div><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB89e0GbUB6Lx06-jXWjvJoZ8NfYvy42BGMpjMcOVGBIUTpFnnx2QCfC65STcow6foCQ9dbZMmpNtYQpem4LegJEDZw5jnJQSd8MH_PeDhUG4EPiyL5XzrB0B_cLpott5cXtLTpm5OiVroJ29xag9P1dukmmrz64DTlZhoQX_tNE3nUI30eOAKg08RAgMs9aH5hIfQUnu2hYEa84TmKsZp15RADdBwiocs5GLehJrcY"/></div></div></div><div class="h-8 w-full bg-surface-container-low/95 px-gutter flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-sm truncate"><span class="w-2 h-2 rounded-full bg-primary-container shrink-0"></span><span class="font-medium text-on-surface">Status:</span><span class="truncate">SQLite Knowledge Base: Active (148+ Verified Records) • Live DuckDuckGo District Search: Connected</span></div><a class="hidden sm:flex items-center gap-space-xs text-primary hover:text-primary-container shrink-0 font-medium" href="https://shahdol.nic.in" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[14px]">public</span>Official Portal: shahdol.nic.in</a></div></header><main class="w-full pt-28 bg-surface min-h-[calc(100vh-14rem)]"><div class="flex flex-col w-full">
+<!-- Live KVK Advisory Flash Notice -->
+<div class="w-full bg-secondary text-on-secondary px-gutter py-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm overflow-hidden text-ellipsis whitespace-nowrap">
+<span class="inline-flex items-center justify-center p-1 rounded-full bg-secondary-container text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider bg-secondary-container/30 px-2 py-0.5 rounded text-on-secondary shrink-0 font-semibold">KVK Shahdol Live</span>
+<p class="font-body-sm text-body-sm font-medium truncate">
+        वर्तमान कृषि सलाह: खरीफ फसलों (धान, कोदो, कुटकी, अरहर) के लिए बीज उपचार एवं मृदा परीक्षण करवाएं। कृषि विज्ञान केंद्र शहडोल • रबी पूर्व जल संचयन परामर्श जारी
+      </p>
+</div>
+<div class="hidden lg:flex items-center gap-space-sm shrink-0 pl-space-md">
+<span class="font-label-sm text-label-sm opacity-90">KVK Expert Helpdesk: 07652-240212</span>
+<a class="px-space-sm py-0.5 bg-surface text-secondary font-label-sm text-label-sm rounded hover:bg-surface-container-low transition-colors font-semibold" href="#eligibility-checker">पात्रता जांचें</a>
+</div>
+</div>
+<!-- Editorial Section Anchor / Page Banner -->
+<div class="w-full px-gutter py-space-xl bg-surface-container-low relative overflow-hidden">
+<!-- Atmospheric subtle ambient graphics -->
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-32 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-end justify-between gap-space-lg relative z-10">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            कृषि व जनकल्याण पोर्टल
+          </span>
+<span class="px-space-sm py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-full">
+            Madhya Pradesh Agro-Intelligence v2.4
+          </span>
+<span class="px-space-sm py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-full">
+            100% DBT Integrated
+          </span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">
+          Shahdol Agriculture &amp; District Schemes Hub
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Empowering farmers, tribal communities, and citizens across Sohagpur, Budhar, Jaisinghnagar &amp; Beohari with verified crop science, minimum support prices (MSP), and targeted welfare execution.
+        </p>
+</div>
+<!-- Quick Summary Metric Chips -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm w-full md:w-auto shrink-0">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Mandi Arrivals Today</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">14,280 Qtl</div>
+<div class="font-label-sm text-label-sm text-primary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12% Sohagpur
+          </div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Active Beneficiaries</div>
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">3.82 Lakh</div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Direct DBT MP
+          </div>
+</div>
+<div class="col-span-2 sm:col-span-1 bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Kisan Sahayata AI</div>
+<div class="font-headline-sm text-headline-sm text-tertiary font-bold">24×7 Live</div>
+<div class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">forum</span> 8 Dialects Audio
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="w-full px-gutter py-space-xl max-w-7xl mx-auto space-y-space-xl">
+<!-- 1. Major District Agriculture & Crops (Dense Asymmetric Bento Layout) -->
+<section class="space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">कृषि उत्पादन व उपार्जन विश्लेषण</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Major District Agriculture &amp; Regional Crops</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">खरीफ विपणन सत्र 2024-25 • आधार प्रमाणीकरण अनिवार्य</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Rice / Paddy Card (Dominant Hero Card - 5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">grass</span> धान (Rice / Paddy)
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Grade A &amp; Common</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Sohagpur &amp; Budhar Paddy Belt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Major fertile alluvial-clay basin of Son and Johilla rivers. Designated high-yield zone with 42 e-Uparjan procurement centers and geo-tagged grain weighbridges.
+              </p>
+</div>
+<!-- Agricultural Metric Badges -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Procurement MSP</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">₹2,300 <span class="text-xs font-normal">/ Qtl</span></div>
+<div class="font-label-sm text-label-sm text-outline">Common Paddy Rate</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Grade A MSP</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">₹2,320 <span class="text-xs font-normal">/ Qtl</span></div>
+<div class="font-label-sm text-label-sm text-outline">+₹117 over 2023-24</div>
+</div>
+</div>
+<!-- Rich Visual: Inline SVG Production Trendline -->
+<div class="bg-surface-container-low/60 p-space-sm rounded-lg">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">District Paddy Yield (Lakh MT)</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">4.18 Peak</span>
+</div>
+<svg class="w-full h-16 text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 280 60">
+<path d="M0,50 Q40,42 70,45 T140,30 T210,22 T280,10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0,50 Q40,42 70,45 T140,30 T210,22 T280,10 L280,60 L0,60 Z" fill="currentColor" fill-opacity="0.12"></path>
+<circle cx="280" cy="10" fill="currentColor" r="4"></circle>
+<circle cx="210" cy="22" fill="currentColor" r="3"></circle>
+<circle cx="140" cy="30" fill="currentColor" r="3"></circle>
+<circle cx="70" cy="45" fill="currentColor" r="3"></circle>
+</svg>
+<div class="flex justify-between font-label-sm text-label-sm text-outline-variant text-[10px] mt-1">
+<span>2021-22</span>
+<span>2022-23</span>
+<span>2023-24</span>
+<span class="text-primary font-bold">2024-25 Est</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">warehouse</span> 42 Active Mandi Points
+            </span>
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:bg-primary-container transition-colors flex items-center gap-1 font-semibold" onclick="askAiPaddyAdvisory()" type="button">
+<span>रोग प्रबंधन सलाह</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Millets (Shree Anna) & Pulses Mosaic (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Shree Anna (Kodo-Kutki Tribal Superfood) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="space-y-space-xs max-w-lg">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 bg-secondary text-on-secondary font-label-sm text-label-sm rounded-full flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">nutrition</span> श्री अन्न (Millets)
+                  </span>
+<span class="px-space-sm py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-full">
+                    Kodo &amp; Kutki Special Reserve
+                  </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                  Tribal Superfood Heritage: कोदो-कुटकी पुनरुद्धार मिशन
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Grown organically by Gond and Baiga communities across Jaisinghnagar hills. Climate-resilient, requiring 70% less irrigation. Supported with clean processing hubs and value-addition FPOs.
+                </p>
+</div>
+<!-- High Contrast Metric Card -->
+<div class="bg-secondary-fixed-dim/40 p-space-sm rounded-lg text-right shrink-0">
+<div class="font-label-sm text-label-sm text-on-secondary-container font-semibold">Shree Anna Subsidy</div>
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">₹3,000 <span class="text-xs font-normal">/ Hectare</span></div>
+<div class="font-label-sm text-label-sm text-on-secondary-container">Under Millet Mission MP</div>
+</div>
+</div>
+<!-- Millets Features Pill Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm mt-space-md pt-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-1 text-primary font-semibold font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">factory</span> 3 Mini Processing Units
+                </div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Dethreshing, polishing &amp; packaging at Burhar &amp; Jaisinghnagar.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-1 text-secondary font-semibold font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> TRIFED &amp; Retail Brand
+                </div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">'Shahdol Shree Anna' packaged retail packs distributed pan-India.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-1 text-tertiary font-semibold font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">biotech</span> KVK Seed Certification
+                </div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Certified high-potency seed banks at 14 tribal gram panchayats.</p>
+</div>
+</div>
+</div>
+<!-- Pulses & Oilseeds (अरहर, सरसों, चना) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">grain</span>
+</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Pulses &amp; Oilseeds (दलहन एवं तिलहन)</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Arhar (Tur), Mustard &amp; Gram procurement support in Beohari plateau</p>
+</div>
+</div>
+<span class="px-space-sm py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-md">
+                Rabi Pre-Sowing Window
+              </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">अरहर / तुअर (Pigeon Pea)</span>
+<div class="font-label-sm text-label-sm text-outline mt-0.5">MSP: ₹7,550 / Qtl</div>
+</div>
+<div class="mt-space-sm pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> NAFED Registered
+                </div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">सरसों / राई (Mustard)</span>
+<div class="font-label-sm text-label-sm text-outline mt-0.5">MSP: ₹5,650 / Qtl</div>
+</div>
+<div class="mt-space-sm pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">water_drop</span> Micro-irrigation 45% Subsidy
+                </div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">चना (Bengal Gram)</span>
+<div class="font-label-sm text-label-sm text-outline mt-0.5">MSP: ₹5,440 / Qtl</div>
+</div>
+<div class="mt-space-sm pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Free Rhizobium Packets
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Interactive AI Scheme Eligibility Checker Widget -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg md:p-space-xl relative overflow-hidden" id="eligibility-checker">
+<!-- Decorative Backdrop Graphic -->
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none translate-x-12 translate-y-12">
+<span class="material-symbols-outlined text-[320px] text-primary">psychology</span>
+</div>
+<div class="relative z-10 max-w-4xl space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Instant Civic Intelligence Engine</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">AI Scheme Eligibility Checker (पात्रता सत्यापन)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Select your beneficiary profile to filter government allowances, land grants, seed subsidies, and housing sanctions tailored for Shahdol district residents.
+            </p>
+</div>
+<span class="px-space-md py-space-xs bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg shrink-0 self-start sm:self-auto flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span> Aadhaar/Samagra Safe
+          </span>
+</div>
+<!-- Filter Pill Selectors -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs" id="categoryPills">
+<button class="scheme-pill px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-all bg-primary text-on-primary font-semibold shadow-sm" onclick="selectSchemeFilter('all', this)" type="button">
+            All Schemes (समस्त योजनाएं)
+          </button>
+<button class="scheme-pill px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" onclick="selectSchemeFilter('farmer', this)" type="button">
+            🌾 Farmer &amp; Cultivator (किसान)
+          </button>
+<button class="scheme-pill px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" onclick="selectSchemeFilter('women', this)" type="button">
+            👩 Women &amp; Ladli Behna (महिला)
+          </button>
+<button class="scheme-pill px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" onclick="selectSchemeFilter('tribal', this)" type="button">
+            🏹 Tribal &amp; Forest Dwellers (जनजातीय)
+          </button>
+<button class="scheme-pill px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high" onclick="selectSchemeFilter('youth', this)" type="button">
+            🎓 Youth &amp; Employment (युवा वर्ग)
+          </button>
+</div>
+<!-- Live Filter Feedback Bar -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm" id="filterNotice">
+<span>Showing <strong>5 district-level priority schemes</strong> verified with active treasury funds in Shahdol.</span>
+<span class="text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified_user</span> NIC MP Integrated
+          </span>
+</div>
+</div>
+</section>
+<!-- 3. Government Schemes Navigator (योजना मार्गदर्शिका) Cards Grid -->
+<section class="space-y-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">जनकल्याण एवं प्रत्यक्ष लाभ अंतरण (DBT)</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">District Welfare &amp; Financial Assistance Schemes</h2>
+</div>
+<div class="hidden sm:flex items-center gap-2">
+<span class="text-xs bg-primary-container/20 text-primary font-bold px-2.5 py-1 rounded">Samagra e-KYC Active</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="schemesCardsContainer">
+<!-- Scheme 1: PM Kisan + Mukhyamantri Kisan Kalyan -->
+<div class="scheme-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between" data-category="farmer">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm rounded-md font-semibold">
+                किसान कल्याण
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">100% DBT Aadhaar</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                PM-Kisan &amp; Mukhyamantri Kisan Kalyan Yojana
+              </h3>
+<p class="font-label-sm text-label-sm text-secondary font-semibold mt-0.5">
+                ₹12,000 / Year Total Direct Annual Assistance
+              </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Synchronized financial support: ₹6,000 via PM-KISAN (3 installments of ₹2,000) + ₹6,000 via MP Mukhyamantri Kisan Kalyan (3 installments of ₹2,000) credited directly to bank accounts.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Shahdol Beneficiaries:</span>
+<span class="font-semibold text-on-surface">1,48,210 Small/Marginal Farmers</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Required e-KYC:</span>
+<span class="font-semibold text-primary">Aadhaar Linked Land Record (Khasra)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" href="https://pmkisan.gov.in" rel="noopener" target="_blank">
+<span>पोर्टल जांचें</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:bg-primary-container transition-colors font-medium" onclick="askAiAboutScheme('PM-Kisan &amp; Mukhyamantri Kisan Kalyan')" type="button">
+              दस्तावेज विवरण पूछें
+            </button>
+</div>
+</div>
+<!-- Scheme 2: Ladli Behna Yojana -->
+<div class="scheme-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between" data-category="women">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-md font-semibold">
+                महिला सशक्तिकरण
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">10th Every Month</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Mukhyamantri Ladli Behna Yojana (लाड़ली बहना)
+              </h3>
+<p class="font-label-sm text-label-sm text-secondary font-semibold mt-0.5">
+                ₹1,250 / Month Regular Monthly Support
+              </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Financial independence scheme for married, widowed, and divorced women aged 21–60 years in Shahdol. Direct DBT deposit on the 10th of every calendar month.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">District Coverage:</span>
+<span class="font-semibold text-on-surface">2.14 Lakh Women Enrolled</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Annual Gas Subsidy:</span>
+<span class="font-semibold text-primary">₹450 Gas Cylinder Linkage</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<a class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-1" href="https://cmladlibahna.mp.gov.in" rel="noopener" target="_blank">
+<span>स्थिति ट्रैक करें</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<button class="px-space-md py-space-xs bg-secondary text-on-secondary font-label-sm text-label-sm rounded-lg hover:bg-secondary-container transition-colors font-medium" onclick="askAiAboutScheme('Ladli Behna Yojana')" type="button">
+              पात्रता नियम देखें
+            </button>
+</div>
+</div>
+<!-- Scheme 3: Sickle Cell Anaemia Elimination Mission -->
+<div class="scheme-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between" data-category="tribal">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm rounded-md font-semibold">
+                स्वास्थ्य सुरक्षा • राष्ट्रीय मिशन
+              </span>
+<span class="font-label-sm text-label-sm text-error font-bold">Priority Healthcare</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Shahdol Sickle Cell Anaemia Elimination Mission
+              </h3>
+<p class="font-label-sm text-label-sm text-tertiary font-semibold mt-0.5">
+                Free Universal Genetic Screening &amp; Smart Cards
+              </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Inaugurated by Hon'ble Prime Minister in Shahdol. Universal screening for all tribal citizens up to age 40, issuing Color-Coded Smart Genetic Status Cards, Hydroxyurea therapy, and marriage counseling.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Screenings Completed:</span>
+<span class="font-semibold text-on-surface">5,82,410 Persons Screened</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Smart Cards Issued:</span>
+<span class="font-semibold text-tertiary">3.9 Lakh Genetic Cards Distributed</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_hospital</span> Shahdol Medical College Hub
+            </span>
+<button class="px-space-md py-space-xs bg-tertiary text-on-tertiary font-label-sm text-label-sm rounded-lg hover:bg-tertiary-container transition-colors font-medium" onclick="askAiAboutScheme('Sickle Cell Elimination Mission Shahdol')" type="button">
+              कैंप स्थान व कार्ड
+            </button>
+</div>
+</div>
+<!-- Scheme 4: Pradhan Mantri Awas Yojana (PMAY-Gramin & Urban) -->
+<div class="scheme-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between" data-category="farmer">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-md font-semibold">
+                आवास एवं बुनियादी ढांचा
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">PMAY 2.0 Sanctions</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Pradhan Mantri Awas Yojana (Gramin &amp; Urban)
+              </h3>
+<p class="font-label-sm text-label-sm text-primary font-semibold mt-0.5">
+                Up to ₹1.20 Lakh Grant + 90 Days MGNREGA Wages
+              </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pucca houses with toilet facilities (Swachh Bharat) and Saubhagya power connection for homeless rural families across Jaisinghnagar, Burhar, and Gohparu tehsils.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Houses Completed:</span>
+<span class="font-semibold text-on-surface">74,380 Rural Dwellings</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Geo-tagging:</span>
+<span class="font-semibold text-primary">AwaasSoft Mobile Verified</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" href="https://rhreporting.nic.in" rel="noopener" target="_blank">
+<span>सत्यापन सूची</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:bg-primary-container transition-colors font-medium" onclick="askAiAboutScheme('PMAY Gramin Shahdol Housing')" type="button">
+              मंजूरी स्थिति चेक करें
+            </button>
+</div>
+</div>
+<!-- Scheme 5: Tribal Welfare & Forest Rights Act (FRA Patta) -->
+<div class="scheme-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between" data-category="tribal">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-primary-fixed-dim text-on-primary-fixed-variant font-label-sm text-label-sm rounded-md font-semibold">
+                वनाधिकार एवं आजीविका
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">FRA Special Cell</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Forest Rights Act (FRA Patta) &amp; Van Dhan Vikas
+              </h3>
+<p class="font-label-sm text-label-sm text-secondary font-semibold mt-0.5">
+                Land Ownership Pattas &amp; Minor Forest Produce MSP
+              </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Legal land titles for traditional tribal inhabitants over forest land, coupled with MSP procurement of Minor Forest Produce (Mahua, Tendu Patta, Harra, Baheda, Sal seeds) via Van Dhan Kendras.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Pattas Distributed:</span>
+<span class="font-semibold text-on-surface">26,940 Forest Rights Titles</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Tendu Patta Bonus:</span>
+<span class="font-semibold text-secondary">₹4,000 / Standard Bag Rate</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">park</span> 18 Van Dhan Kendras
+            </span>
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:bg-primary-container transition-colors font-medium" onclick="askAiAboutScheme('Tribal Forest Rights and Van Dhan Shahdol')" type="button">
+              वनाधिकार दावा फॉर्म
+            </button>
+</div>
+</div>
+<!-- Scheme 6: CM Udyam Kranti & Youth Self Employment -->
+<div class="scheme-card bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between" data-category="youth">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-md font-semibold">
+                स्वरोजगार एवं युवा
+              </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Collateral Free Loan</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Mukhyamantri Udyam Kranti Yojana (उद्यम क्रांति)
+              </h3>
+<p class="font-label-sm text-label-sm text-secondary font-semibold mt-0.5">
+                Loans from ₹1 Lakh to ₹50 Lakh with 3% Interest Subsidy
+              </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Empowering local youths in Shahdol to launch agri-business startups, cold storages, repair centers, and regional tourism enterprises. Complete state government loan guarantee.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Eligibility Age:</span>
+<span class="font-semibold text-on-surface">18 to 40 Years (12th Pass)</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Subsidy Period:</span>
+<span class="font-semibold text-primary">3% Subvention for 7 Years</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" href="https://samast.mponline.gov.in" rel="noopener" target="_blank">
+<span>MP Online पोर्टल</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:bg-primary-container transition-colors font-medium" onclick="askAiAboutScheme('CM Udyam Kranti Yojana Shahdol')" type="button">
+              प्रोजेक्ट रिपोर्ट सहायता
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Mandi Bhav (दैनिक मंडी भाव) Live Rates Table -->
+<section class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">कृषि उपज मंडी समिति शहडोल</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">
+            Live Daily Mandi Bhav (दैनिक मंडी भाव व आवक)
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Official daily verified commodity auctions across Shahdol, Budhar, and Beohari Krishi Upaj Mandis (ई-राष्ट्रीय कृषि बाजार e-NAM).
+          </p>
+</div>
+<!-- Mandi Filter Switcher -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-lg self-start sm:self-auto">
+<button class="mandi-tab px-3 py-1 text-label-sm font-label-sm rounded bg-surface text-primary font-semibold shadow-xs" onclick="filterMandiTable('all', this)" type="button">समस्त मंडियां</button>
+<button class="mandi-tab px-3 py-1 text-label-sm font-label-sm rounded text-on-surface-variant hover:text-on-surface" onclick="filterMandiTable('shahdol', this)" type="button">शहडोल मुख्य</button>
+<button class="mandi-tab px-3 py-1 text-label-sm font-label-sm rounded text-on-surface-variant hover:text-on-surface" onclick="filterMandiTable('budhar', this)" type="button">बुढ़ार उपमंडी</button>
+<button class="mandi-tab px-3 py-1 text-label-sm font-label-sm rounded text-on-surface-variant hover:text-on-surface" onclick="filterMandiTable('beohari', this)" type="button">ब्योहारी मंडी</button>
+</div>
+</div>
+<!-- Tabular Commodity Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-md px-space-md">फसल / जिंस (Commodity)</th>
+<th class="py-space-md px-space-md">मंडी केंद्र (Market)</th>
+<th class="py-space-md px-space-md">दैनिक आवक (Arrivals)</th>
+<th class="py-space-md px-space-md text-right">न्यूनतम भाव (Min)</th>
+<th class="py-space-md px-space-md text-right">अधिकतम भाव (Max)</th>
+<th class="py-space-md px-space-md text-right text-primary font-bold">मॉडल भाव (Modal MSP)</th>
+<th class="py-space-md px-space-md text-center">प्रवृत्ति (Trend)</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y-0" id="mandiTableBody">
+<!-- Row 1: Paddy Sohagpur -->
+<tr class="hover:bg-surface-container-low/60 transition-colors mandi-row" data-mandi="shahdol">
+<td class="py-space-md px-space-md font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  धान (Paddy - Common 1010)
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">शहडोल मुख्य</span>
+</td>
+<td class="py-space-md px-space-md font-medium">3,450 बोरी (1,725 Qtl)</td>
+<td class="py-space-md px-space-md text-right">₹2,180</td>
+<td class="py-space-md px-space-md text-right">₹2,340</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">₹2,300 / Qtl</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +₹35
+                  </span>
+</td>
+</tr>
+<!-- Row 2: Kodo Tribal Millets -->
+<tr class="hover:bg-surface-container-low/60 transition-colors mandi-row" data-mandi="budhar">
+<td class="py-space-md px-space-md font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  कोदो (Kodo Tribal Millet)
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">बुढ़ार उपमंडी</span>
+</td>
+<td class="py-space-md px-space-md font-medium">890 बोरी (445 Qtl)</td>
+<td class="py-space-md px-space-md text-right">₹3,850</td>
+<td class="py-space-md px-space-md text-right">₹4,400</td>
+<td class="py-space-md px-space-md text-right font-bold text-secondary">₹4,290 / Qtl</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center text-secondary text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> स्थिर
+                  </span>
+</td>
+</tr>
+<!-- Row 3: Kutki -->
+<tr class="hover:bg-surface-container-low/60 transition-colors mandi-row" data-mandi="shahdol">
+<td class="py-space-md px-space-md font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  कुटकी (Little Millet)
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">शहडोल मुख्य</span>
+</td>
+<td class="py-space-md px-space-md font-medium">620 बोरी (310 Qtl)</td>
+<td class="py-space-md px-space-md text-right">₹4,200</td>
+<td class="py-space-md px-space-md text-right">₹4,850</td>
+<td class="py-space-md px-space-md text-right font-bold text-secondary">₹4,600 / Qtl</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +₹70
+                  </span>
+</td>
+</tr>
+<!-- Row 4: Arhar / Tur -->
+<tr class="hover:bg-surface-container-low/60 transition-colors mandi-row" data-mandi="beohari">
+<td class="py-space-md px-space-md font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  अरहर / तुअर (Red Gram)
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">ब्योहारी मंडी</span>
+</td>
+<td class="py-space-md px-space-md font-medium">1,120 बोरी (560 Qtl)</td>
+<td class="py-space-md px-space-md text-right">₹8,100</td>
+<td class="py-space-md px-space-md text-right">₹9,450</td>
+<td class="py-space-md px-space-md text-right font-bold text-tertiary">₹8,900 / Qtl</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +₹110
+                  </span>
+</td>
+</tr>
+<!-- Row 5: Mustard / Sarson -->
+<tr class="hover:bg-surface-container-low/60 transition-colors mandi-row" data-mandi="beohari">
+<td class="py-space-md px-space-md font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  सरसों (Mustard Black)
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">ब्योहारी मंडी</span>
+</td>
+<td class="py-space-md px-space-md font-medium">940 बोरी (470 Qtl)</td>
+<td class="py-space-md px-space-md text-right">₹5,100</td>
+<td class="py-space-md px-space-md text-right">₹5,800</td>
+<td class="py-space-md px-space-md text-right font-bold text-tertiary">₹5,520 / Qtl</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center text-error text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span> -₹20
+                  </span>
+</td>
+</tr>
+<!-- Row 6: Gram / Chana -->
+<tr class="hover:bg-surface-container-low/60 transition-colors mandi-row" data-mandi="shahdol">
+<td class="py-space-md px-space-md font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  चना (Bengal Gram - Desi)
+                </td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface text-label-sm font-label-sm">शहडोल मुख्य</span>
+</td>
+<td class="py-space-md px-space-md font-medium">1,600 बोरी (800 Qtl)</td>
+<td class="py-space-md px-space-md text-right">₹5,200</td>
+<td class="py-space-md px-space-md text-right">₹5,750</td>
+<td class="py-space-md px-space-md text-right font-bold text-primary">₹5,480 / Qtl</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span> +₹15
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Mandi Footer Disclaimer & Direct e-NAM Link -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+<span>Realtime API synced with Agmarknet &amp; MP Mandi Board (e-NAM) • Today 09:30 AM Session</span>
+</div>
+<a class="text-primary hover:underline font-semibold flex items-center gap-1" href="https://enam.gov.in" rel="noopener" target="_blank">
+<span>राष्ट्रीय ई-नाम पोर्टल</span>
+<span class="material-symbols-outlined text-[14px]">launch</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. Direct Inquiry & AI Application Assistant CTA Strip -->
+<section class="bg-primary text-on-primary rounded-xl shadow-xl p-space-lg md:p-space-xl relative overflow-hidden">
+<!-- Background Ambient Glow & Forestry Motifs -->
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 space-y-space-xs">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-primary/10 text-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>AI Citizen Administrative Counselor (स्मार्ट सहायक)</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg tracking-tight">
+            Ask SMART SHAHdol AI for Application Forms &amp; Required Documents
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed opacity-95">
+            Get exact document checklists (Khasra, Samagra ID, Bank DBT passbook, Aadhaar-link), application deadlines, tehsil office contact numbers, and step-by-step Hindi guidance instantly.
+          </p>
+<!-- Rapid Prompt Suggestions -->
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-on-primary/15 hover:bg-on-primary/25 text-on-primary font-label-sm text-label-sm transition-colors text-left" onclick="triggerQuickPrompt('लाड़ली बहना योजना का फॉर्म भरने के लिए कौन से दस्तावेज चाहिए?')" type="button">
+              💬 'लाड़ली बहना दस्तावेज सूची'
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-on-primary/15 hover:bg-on-primary/25 text-on-primary font-label-sm text-label-sm transition-colors text-left" onclick="triggerQuickPrompt('शहडोल में कोदो-कुटकी उपार्जन केंद्र कहां हैं?')" type="button">
+              💬 'कोदो-कुटकी उपार्जन केंद्र'
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-on-primary/15 hover:bg-on-primary/25 text-on-primary font-label-sm text-label-sm transition-colors text-left" onclick="triggerQuickPrompt('सिकल सेल स्मार्ट कार्ड कैसे बनवाएं शहडोल में?')" type="button">
+              💬 'सिकल सेल कार्ड जांच केंद्र'
+            </button>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest text-on-surface p-space-md rounded-xl shadow-lg space-y-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">contact_support</span>
+<span class="font-label-md text-label-md font-bold">Ask AI Directly</span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-low px-3 py-2.5 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container" id="aiDirectInput" placeholder="योजना या फसल संबंधित सवाल लिखें..." type="text"/>
+</div>
+<button class="w-full py-2.5 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-lg transition-colors font-bold flex items-center justify-center gap-2 shadow-sm" onclick="submitDirectAiQuery()" type="button">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+<span>तुरंत उत्तर प्राप्त करें (Get Answer)</span>
+</button>
+</div>
+<div class="text-center font-label-sm text-label-sm text-primary-fixed-dim">
+            Collectorate Shahdol • DeGS AI Citizen Desk • 100% Free
+          </div>
+</div>
+</div>
+</section>
+<!-- Modal Dialog for AI Quick Response (Vanilla Micro-interaction) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-md" id="aiResponseModal">
+<div class="bg-surface-container-lowest max-w-xl w-full rounded-2xl shadow-2xl p-space-lg space-y-space-md max-h-[870px] overflow-y-auto">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="p-1.5 bg-primary-container text-on-primary rounded-lg">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary">SMART SHAHdol AI Assistant</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Verified District Administration Source</div>
+</div>
+</div>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="closeAiModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg font-label-md text-label-md text-primary font-semibold" id="modalQueryTitle">
+          Query: 
+        </div>
+<div class="font-body-md text-body-md text-on-surface space-y-space-sm leading-relaxed" id="modalQueryAnswer">
+<!-- Dynamic Text Inserted via JS -->
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">NIC MP • Citizen Welfare Directory</span>
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-label-sm text-label-sm rounded-lg font-semibold" onclick="closeAiModal()" type="button">
+            समझ आ गया (Close)
+          </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // 1. Category Filtering for Schemes Navigator
+    function selectSchemeFilter(category, buttonEl) {
+      // Update Pill Styles
+      const pills = document.querySelectorAll('.scheme-pill');
+      pills.forEach(pill => {
+        pill.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+        pill.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      buttonEl.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      buttonEl.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+
+      // Filter Cards
+      const cards = document.querySelectorAll('#schemesCardsContainer .scheme-card');
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Update Feedback Text
+      const notice = document.getElementById('filterNotice');
+      notice.innerHTML = `<span>Showing <strong>${visibleCount} verified scheme(s)</strong> for category: <strong>${buttonEl.innerText}</strong></span><span class="text-primary font-medium flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified_user</span> NIC MP Integrated</span>`;
+    }
+
+    // 2. Mandi Table Filtering
+    function filterMandiTable(mandi, btn) {
+      const tabs = document.querySelectorAll('.mandi-tab');
+      tabs.forEach(t => {
+        t.classList.remove('bg-surface', 'text-primary', 'font-semibold', 'shadow-xs');
+        t.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface', 'text-primary', 'font-semibold', 'shadow-xs');
+      btn.classList.remove('text-on-surface-variant');
+
+      const rows = document.querySelectorAll('#mandiTableBody .mandi-row');
+      rows.forEach(row => {
+        const rowMandi = row.getAttribute('data-mandi');
+        if (mandi === 'all' || rowMandi === mandi) {
+          row.classList.remove('hidden');
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+    }
+
+    // 3. Modal and AI Query Triggers
+    const modal = document.getElementById('aiResponseModal');
+    const modalTitle = document.getElementById('modalQueryTitle');
+    const modalAnswer = document.getElementById('modalQueryAnswer');
+
+    function openModalWithContent(query, answerHtml) {
+      modalTitle.innerText = 'प्रश्न: ' + query;
+      modalAnswer.innerHTML = answerHtml;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeAiModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function askAiPaddyAdvisory() {
+      openModalWithContent(
+        'धान (Paddy) में कीट व रोग प्रबंधन सलाह - सोहागपुर व बुढ़ार संभाग',
+        `
+        <div class="space-y-2">
+          <p class="font-medium text-primary">कृषि विज्ञान केंद्र (KVK) शहडोल परामर्श:</p>
+          <ul class="list-disc pl-5 space-y-1 text-on-surface-variant font-body-sm">
+            <li><strong>तना छेदक (Stem Borer) एवं झुलसा रोग (Blast):</strong> खेत में फेरोमोन ट्रैप (Pheromone Traps) 5 प्रति एकड़ लगाएं। रोग के प्रारंभिक लक्षण दिखने पर ट्राइसाइक्लाजोल 75% WP की 0.6 ग्राम प्रति लीटर पानी में छिड़काव करें।</li>
+            <li><strong>सफेद एवं भूरा माहू (BPH):</strong> फसल के निचले हिस्से में पानी निकासी सुगम रखें। आवश्यकता पड़ने पर पाइमेट्रोज़िन 50% WG 120 ग्राम प्रति एकड़ का छिड़काव करें।</li>
+            <li><strong>उपार्जन पंजीयन:</strong> खरीफ 2024 ई-उपार्जन पोर्टल पर नजदीकी प्राथमिक कृषि सहकारी साख समिति (PACS) में 20 अक्टूबर से पूर्व बायोमेट्रिक सत्यापन पूर्ण करें।</li>
+          </ul>
+        </div>
+        `
+      );
+    }
+
+    function askAiAboutScheme(schemeName) {
+      openModalWithContent(
+        schemeName + ' - आवेदन दस्तावेज व पात्रता नियम',
+        `
+        <div class="space-y-2">
+          <p class="font-medium text-on-surface">शहडोल जिला प्रशासन ई-गवर्नेंस दिशा-निर्देश:</p>
+          <div class="bg-surface-container-low p-space-sm rounded-lg space-y-1 text-on-surface-variant font-body-sm">
+            <div><strong>1. आवश्यक दस्तावेज:</strong> समग्र आईडी (Samagra ID), आधार कार्ड (मोबाईल लिंक्ड), खसरा नकल/भूमि पट्टा, सक्रिय बैंक पासबुक (DBT इनेबल्ड)।</div>
+            <div><strong>2. आवेदन स्थल:</strong> ग्राम पंचायत भवन, लोक सेवा केंद्र (LSK), अथवा CSC कॉमन सर्विस सेंटर।</div>
+            <div><strong>3. संपर्क नोडल अधिकारी:</strong> उप संचालक कृषि कार्यालय / जिला कार्यक्रम अधिकारी महिला एवं बाल विकास, कलेक्ट्रेट शहडोल (दूरभाष: 07652-240212)।</div>
+          </div>
+          <p class="text-xs text-outline">नोट: सभी आवेदन निःशुल्क हैं। किसी भी बिचौलिए को कोई शुल्क न दें।</p>
+        </div>
+        `
+      );
+    }
+
+    function triggerQuickPrompt(promptText) {
+      document.getElementById('aiDirectInput').value = promptText;
+      submitDirectAiQuery();
+    }
+
+    function submitDirectAiQuery() {
+      const input = document.getElementById('aiDirectInput');
+      const query = input.value.trim() || 'शहडोल कृषि व जनकल्याण योजनाएं';
+      openModalWithContent(
+        query,
+        `
+        <div class="space-y-2">
+          <p class="text-on-surface font-body-md">
+            <strong>शहडोल एआई सहायक विश्लेषण:</strong> आपके प्रश्न <em>"${query}"</em> के लिए जिला ज्ञानकोष (SQLite Verified Records) से निम्नलिखित जानकारी प्राप्त हुई है:
+          </p>
+          <div class="bg-surface-container-low p-space-sm rounded-lg space-y-1 text-body-sm text-on-surface-variant">
+            <p>• आवेदन करने हेतु आवेदक का मध्य प्रदेश का मूल निवासी होना अनिवार्य है।</p>
+            <p>• बैंक खाते में एनपीसीआई (NPCI) मैपिंग तथा आधार डीबीटी सक्रिय होना अनिवार्य है।</p>
+            <p>• नजदीकी सहायता केंद्र: जनपद पंचायत सोहागपुर, बुढ़ार, जयसिंहनगर अथवा ब्योहारी तहसील कार्यालय में संपर्क किया जा सकता है।</p>
+            <p>• मुख्यमंत्री हेल्पलाइन नंबर <strong>181</strong> पर निःशुल्क शिकायत अथवा मार्गदर्शन दर्ज किया जा सकता है।</p>
+          </div>
+        </div>
+        `
+      );
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><a class="hover:text-primary transition-colors" href="https://shahdol.nic.in" rel="noopener" target="_blank">District Portal shahdol.nic.in</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="#">NIC MP State Centre</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="#">Citizen Helpline 181</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="#">Collectorate Shahdol</a></div><div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right">© SMART SHAHdol AI • District E-Governance Society (DeGS) Shahdol. All rights reserved.</div></div></footer></body></html>
